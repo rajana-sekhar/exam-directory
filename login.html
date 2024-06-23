@@ -1,0 +1,99 @@
+<!DOCTYPE html>   
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title> Login Page </title>  
+<style>  
+ul.nave {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #04364A;
+}
+li{
+  float: left;
+}
+li.list{
+  float:left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  background-color: #176B87;
+}
+li a:hover.active {
+  background-color: #176B87;
+}
+button {   
+       background-color: #176B87;   
+       width: 100%;  
+        color:white;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;   
+         }   
+ form {   
+        border: 3px solid #011118;   
+    }   
+ input[type=text], input[type=password] {   
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid lightblue;   
+        box-sizing: border-box;   
+    }  
+ button:hover {   
+        opacity: 0.7;   
+    }   
+  .cancelbtn {   
+        width: auto;   
+        padding: 10px 18px;  
+        margin: 10px 5px;  
+    }   
+        
+     
+ .container {   
+        padding: 25px;   
+        background-color: #04364A;  
+    }   
+
+</style>   
+</head>    
+<body>    
+    <ul class="nave">
+        <li>
+          <nav>
+          <img src="Exam.png" width="60px" height="40px" id=logo alt="Logo image" style="margin-left: 10px;" />
+          </nav>
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="update.html">Updates</a></li>
+        <li><a href="cources.html">Courses</a></li>
+        <li><a href="contact_us.html">Contact</a></li>
+        <li><a href="about_us.html">About</a></li>
+        <li style="float:right"><a class="active" href="login.html">Login</a></li>
+        <li style="float:right"><a class="active" href="signup.html">Sign Up</a></li>
+    </ul>
+    <center> <h1 style=color:black> Login Form </h1> </center>   
+    <form>  
+        <div class="container">   
+            <label style="color: white;">Username : </label>   
+            <input type="text" placeholder="Enter Username" name="username" required>  
+            <label style="color: white;">Password : </label>   
+            <input type="password" placeholder="Enter Password" name="password" required>  
+            <a href="index.html"><button type="button" > Login</button> </a>
+            <input type="checkbox" checked="checked"> Remember me  
+            <a href="index.html"><button type="button" class="cancelbtn"> Cancel</button> </a>   
+            Forgot <a style="color:white" href="#password">Password?</a>   
+        </div>   
+    </form>    
+</body>     
+</html>  

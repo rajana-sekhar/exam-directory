@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+ul.nave {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #04364A;
+}
+li{
+  float: left;
+}
+li.list{
+  float:left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  background-color: #176B87;
+}
+li a:hover.active {
+  background-color: #176B87;
+}
+
+* {box-sizing: border-box}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+button {
+  background-color: #176B87;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+button:hover {
+  opacity:1;
+}
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+.container {
+  padding: 16px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+a.cancelbtn {   
+        width: auto;   
+        padding: 10px 18px;  
+        margin: 10px 5px;  
+    } 
+</style>
+<body>
+
+  <ul class="nave">
+    <li>
+      <nav>
+      <img src="Exam.png" width="60px" height="40px" id=logo alt="Logo image" style="margin-left: 10px;" />
+      </nav>
+    </li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="update.html">Updates</a></li>
+    <li><a href="cources.html">Courses</a></li>
+    <li><a href="contact_us.html">Contact</a></li>
+    <li><a href="about_us.html">About</a></li>
+    <li style="float:right"><a class="active" href="login.html">Login</a></li>
+    <li style="float:right"><a class="active" href="signup.html">Sign Up</a></li>
+  </ul>
+  <center> <h1 style=color:black> Sign Up Form </h1> </center>
+<form action="/action_page.php" style="border:1px solid #92ddf0; background-color: #04364A;">
+  <div class="container">
+    <label for="email" style="color: white;"><b>Email:</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw" style="color: white;"><b>Password:</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat" style="color: white;"><b>Repeat Password:</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    
+    <label style="color: white;">
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+    
+    <p>By creating an account you agree to our <a href="terms&conditions.html" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+      <a href="index.html"><button type="button" class="cancelbtn"> Sign Up</button> </a>
+      <a href="index.html"><button type="button" class="cancelbtn" > Cancel</button> </a>
+    </div>
+  </div>
+</form>
+
+</body>
+</html>

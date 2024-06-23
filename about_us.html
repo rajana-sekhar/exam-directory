@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>About Us</title>
+<style>
+    /* Header styles */
+ul.nave {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #04364A;
+}
+li{
+  float: left;
+}
+li.list{
+  float:left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  background-color: #176B87;
+}
+li a:hover.active {
+  background-color: #176B87;
+}
+
+/* banner section styles */
+.banner {
+	text-align: center;
+	background-color: #ffffff;
+	margin: 0 auto;
+}
+.banner img {
+	max-width: 100%;
+	height: auto;
+}
+    
+
+/* About Section */
+.about {
+	background: #04364A;
+	background: linear-gradient(360deg, rgb(245, 255, 245) 0%, #71c8eb 100%);
+	padding: 100px 0 20px 0;
+	text-align: center;
+}
+
+.about h1 {
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+}
+
+.about p {
+	font-size: 1rem;
+	color: #323030;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.about-info {
+	margin: 2rem 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: left;
+}
+
+.about-img {
+	width: 20rem;
+	height: 20rem;
+
+}
+
+.about-img img {
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	object-fit: contain;
+}
+
+.about-info p {
+	font-size: 1.3rem;
+	margin: 0 2rem;
+	text-align: justify;
+}
+/* Footer */
+footer {
+	background-color: #04364A;
+	color: white;
+	text-align: center;
+	padding: 20px 0;
+}
+</style>
+</head>
+
+<body>
+	<ul class="nave">
+        <li>
+          <nav>
+          <img src="Exam.png" width="60px" height="40px" id=logo alt="Logo image" style="margin-left: 10px;" />
+          </nav>
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="update.html">Updates</a></li>
+        <li><a href="cources.html">Courses</a></li>
+        <li><a href="contact_us.html">Contact</a></li>
+        <li><a href="about_us.html">About</a></li>
+        <li style="float:right"><a class="active" href="login.html">Login</a></li>
+        <li style="float:right"><a class="active" href="signup.html">Sign Up</a></li>
+      </ul>
+
+	<section class="about">
+		<h1>About Us</h1>
+		<p style="font-weight: bold">Exam Directory is a leading platform...</p>
+		<div class="about-info">
+			<div class="about-img">
+				<img src="Exam.png" alt="Exam Directory">
+			</div>
+		<div>
+	<p>Exam Directory is a leading platform that provides competitive exams resources
+				and Aptitude and Reasoning for students and technology enthusiasts,
+				along with interview and exam preparations for upcoming aspirants.
+				With a strong emphasis on enhancing knowledge,
+				it has become a trusted destination for over 12 million plus registered
+				users worldwide.</p>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<p>© 2023 Exam Directory. All Rights Reserved.</p>
+	</footer>
+</body>
+
+</html>
+
+
